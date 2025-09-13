@@ -101,4 +101,4 @@ You can then ask Le Chat to perform tasks:
 *   *(Potentially)* [Alpic Cloud](https://alpic.cloud/) for hosting
 
 ---
-**Project Magellan** is proudly developed by Wilfred/Mohamed Ali/Adrien and their AI teammates for the **Mistral AI MCP Hackathon 2025**.
+**Project Magellan** is proudly developed by Wilfred/Mohamed Ali/Adrian and their AI teammates for the **Mistral AI MCP Hackathon 2025**.
