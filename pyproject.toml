@@ -1,0 +1,21 @@
+[project]
+name = "magellan"
+version = "0.1.0"
+description = "Magellan 🧭: Charting the web for Mistral AI. A custom MCP server with a custom Mistral connector for the browser-use library, empowering Le Chat agents with truly interactive browser automation."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath=["."]
+
+[dependency-groups]
+dev = [
+  "ruff>=0.9.9",
+  "pytest>=8.3.4",
+  "pytest-cov>=5.0.0",
+  "pytest-sugar>=1.0.0",
+  "pytest-html>=4.1.1",
+  "pytest-benchmark>=5.1.0",
+]
+
