@@ -4,7 +4,10 @@ version = "0.1.0"
 description = "Magellan 🧭: Charting the web for Mistral AI. A custom MCP server with a custom Mistral connector for the browser-use library, empowering Le Chat agents with truly interactive browser automation."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "browser-use>=0.7.7",
+    "mistralai>=1.9.10",
+]
 
 [tool.pytest.ini_options]
 pythonpath=["."]
