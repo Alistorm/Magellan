@@ -1,4 +1,4 @@
-from browser_use import Agent
+from browser_use import Agent, ChatGroq
 from dotenv import load_dotenv
 import asyncio
 
@@ -7,8 +7,8 @@ from mistral_connector import ChatMistral
 load_dotenv()
 
 async def main():
-    llm = ChatMistral(model="mistral-medium-latest")
-    task = "Find Mistral AI and Cerebral Valley MCP Hackathon and give me all informations about it"
+    llm = ChatMistral("mistral-medium-latest")
+    task = "Find the Mistral AI MCP Hackathon"
     agent = Agent(task=task, llm=llm)
     await agent.run()
 
