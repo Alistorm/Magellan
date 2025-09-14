@@ -103,3 +103,46 @@ You can then ask Le Chat to perform tasks:
 
 ---
 **Project Magellan** is proudly developed by Wilfred/Mohamed Ali/Adrian and their AI teammates for the **Mistral AI MCP Hackathon 2025**.
+
+## Retrofitting MCP connectors with the Akinator example (Wilfred part)
+
+### What we learned
+- MCP protocol: how capabilities/tools are exposed and invoked.
+- Implementing an MCP server in Python with fastmcp, focusing on type annotations and JSON schemas.
+- Deploying an MCP service to production with Alpik.
+- Configuring Mistral Le Chat to connect to our MCP server.
+- Integrating a third‑party API (Akinator).
+- Delivering a concrete, end‑to‑end project.
+
+### What we built
+- A working MCP server in Python (fastmcp) deployed on Alpik and consumable from Mistral Le Chat.
+- Demonstrations using the Akinator API to validate end‑to‑end capability exposure and dialogue.
+
+### Next steps and ideas
+- Automatically generate MCP connectors by “retrofitting” existing API specs:
+  - Swagger/OpenAPI 3
+  - GraphQL
+- Enable conversations with real‑world devices for maintenance and Industry 4.0:
+  - Automotive CAN bus
+  - Other IIoT devices
+
+### Differentiator to support
+- AsyncAPI (event‑driven API spec) as a key differentiator.
+  - Vision: allow users to issue a request in Le Chat and receive results asynchronously via notifications.
+  - Implication: would require evolving the turn‑based MCP protocol to support asynchronous events.
+
+### Relationship between our two tracks
+-  Browser automation for retrofitting existing devices complements the MCP connector generation:
+  - Browser automation bridges legacy or UI‑only systems.
+  - MCP connectors provide a standardized interface to both modern APIs and retrofitted endpoints.
+  - Together, they expand coverage from web‑only/legacy devices to event‑driven and device‑level integrations.
+  Pattern illustrated by Akinator
+
+The Akinator example showcases cooperation between an expert system and a generative AI.
+Division of roles:
+Expert system (Akinator): domain heuristics, state management, and deterministic questioning/answer evaluation.
+Generative model (Le Chat/Mistral): natural‑language interaction, explanation, and strategy suggestions to improve user experience.
+
+
+MCP acts as the orchestration layer: the LLM invokes Akinator’s capabilities, receives structured results, and turns them into conversational guidance.
+Outcome: a seamless, human‑friendly dialogue powered by a reliable expert engine—demonstrating how classical AI and generative AI can complement each other end‑to‑end.
