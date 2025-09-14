@@ -9,7 +9,7 @@
 ---
 ## About The Project
 
-Le Chat and other Mistral AI-powered assistants are incredibly powerful language models, but their capabilities are confined to the digital world of text. They cannot interact with the most significant information interface ever created: the World Wide Web.
+Le Chat and other Mistral AI-powered assistants are powerful language models, but their capabilities are confined to the digital world of text. They cannot interact with the most significant information interface ever created: the World Wide Web.
 
 Popular browser automation libraries like `browser-use` provide the tools for AI agents to control a web browser, but they lack native, first-class support for Mistral's powerful family of models.
 
@@ -89,6 +89,7 @@ Once the Magellan server is running, configure your MCP-compatible client (like 
 
 You can then ask Le Chat to perform tasks:
 > "Hey Magellan, go to the Mistral AI Cookbook on GitHub and find an example of how to use function calling."
+>  "Hey Magellan, help me play Akinator live"
 
 ## Built With
 
